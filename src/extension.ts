@@ -44,6 +44,7 @@ import MigrateFresh from './commands/migrate/Fresh'
 
 // Nova files
 import NovaResource from './commands/nova/Resource'
+import NovaFilter from './commands/nova/Filter'
 
 // Cache files
 import CacheClear from './commands/cache/Clear'
@@ -116,6 +117,7 @@ export async function activate(context: ExtensionContext) {
 
   // Nova commands
   context.subscriptions.push(commands.registerCommand('artisan.nova.resource', () => { NovaResource.run() }))
+  context.subscriptions.push(commands.registerCommand('artisan.nova.filter', () => { NovaFilter.run() }))
 
   // Cache commands
   context.subscriptions.push(commands.registerCommand('artisan.cache.clear', () => { CacheClear.run() }))

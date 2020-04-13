@@ -308,6 +308,10 @@
         "title": "Artisan: Nova Resource"
       },
       {
+        "command": "artisan.nova.filter",
+        "title": "Artisan: Nova Filter"
+      },
+      {
         "command": "artisan.clearCompiled",
         "title": "Artisan: Clear Compiled"
       },
