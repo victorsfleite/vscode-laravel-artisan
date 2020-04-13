@@ -264,6 +264,10 @@
         "title": "Artisan: Make Resource"
       },
       {
+        "command": "artisan.make.rule",
+        "title": "Artisan: Make Rule"
+      },
+      {
         "command": "artisan.make.seeder",
         "title": "Artisan: Make Seeder"
       },

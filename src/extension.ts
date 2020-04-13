@@ -30,6 +30,7 @@ import MakePolicy from './commands/make/Policy'
 import MakeProvider from './commands/make/Provider'
 import MakeRequest from './commands/make/Request'
 import MakeResource from './commands/make/Resource'
+import MakeRule from './commands/make/Rule'
 import MakeSeeder from './commands/make/Seeder'
 import MakeTest from './commands/make/Test'
 
@@ -98,6 +99,7 @@ export async function activate(context: ExtensionContext) {
   context.subscriptions.push(commands.registerCommand('artisan.make.provider', () => { MakeProvider.run() }))
   context.subscriptions.push(commands.registerCommand('artisan.make.request', () => { MakeRequest.run() }))
   context.subscriptions.push(commands.registerCommand('artisan.make.resource', () => { MakeResource.run() }))
+  context.subscriptions.push(commands.registerCommand('artisan.make.rule', () => { MakeRule.run() }))
   context.subscriptions.push(commands.registerCommand('artisan.make.seeder', () => { MakeSeeder.run() }))
   context.subscriptions.push(commands.registerCommand('artisan.make.test', () => { MakeTest.run() }))
 
