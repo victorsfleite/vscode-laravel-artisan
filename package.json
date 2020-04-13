@@ -304,6 +304,10 @@
         "title": "Artisan: Migrate Status"
       },
       {
+        "command": "artisan.nova.resource",
+        "title": "Artisan: Nova Resource"
+      },
+      {
         "command": "artisan.clearCompiled",
         "title": "Artisan: Clear Compiled"
       },

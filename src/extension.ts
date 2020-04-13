@@ -42,6 +42,9 @@ import MigrateRollback from './commands/migrate/Rollback'
 import MigrateStatus from './commands/migrate/Status'
 import MigrateFresh from './commands/migrate/Fresh'
 
+// Nova files
+import NovaResource from './commands/nova/Resource'
+
 // Cache files
 import CacheClear from './commands/cache/Clear'
 import CacheTable from './commands/cache/Table'
@@ -110,6 +113,9 @@ export async function activate(context: ExtensionContext) {
   context.subscriptions.push(commands.registerCommand('artisan.migrate.rollback', () => { MigrateRollback.run() }))
   context.subscriptions.push(commands.registerCommand('artisan.migrate.status', () => { MigrateStatus.run() }))
   context.subscriptions.push(commands.registerCommand('artisan.migrate.fresh', () => { MigrateFresh.run() }))
+
+  // Nova commands
+  context.subscriptions.push(commands.registerCommand('artisan.nova.resource', () => { NovaResource.run() }))
 
   // Cache commands
   context.subscriptions.push(commands.registerCommand('artisan.cache.clear', () => { CacheClear.run() }))
