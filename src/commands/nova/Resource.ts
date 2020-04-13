@@ -15,7 +15,7 @@ export default class NovaResource extends Common {
 
     this.execCmd(command, async (info) => {
       if (info.err) {
-        this.showError('Could not create the observer', info.err)
+        this.showError('Could not create the nova resource', info.err)
       } else {
         await this.openFile(info.artisan.dir, '/app/Nova/' + resourceName + '.php')
       }
