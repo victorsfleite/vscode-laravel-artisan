@@ -4,13 +4,13 @@
   "description": "Run Laravel Artisan commands within Visual Studio Code",
   "icon": "images/icon.png",
   "version": "0.0.27",
-  "publisher": "ryannaddy",
+  "publisher": "victorsfleite",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheColorRed/vscode-laravel-artisan"
+    "url": "https://github.com/victorsfleite/vscode-laravel-artisan"
   },
   "bugs": {
-    "url": "https://github.com/TheColorRed/vscode-laravel-artisan/issues"
+    "url": "https://github.com/victorsfleite/vscode-laravel-artisan/issues"
   },
   "engines": {
     "vscode": "^1.23.0"
